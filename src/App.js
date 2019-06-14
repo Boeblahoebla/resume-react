@@ -4,6 +4,11 @@
 // Dependencies
 import React from 'react';
 
+// Components
+import Header from './components/Header';
+
+// Styling
+import './css/style.css';
 
 
 // Component
@@ -11,8 +16,8 @@ import React from 'react';
 
 function App() {
     return (
-        <div className="App">
-            <h1>This is a header</h1>
+        <div className="container-fluid">
+            <Header />
         </div>
     );
 }
