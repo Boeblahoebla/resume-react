@@ -5,7 +5,7 @@
 import React from 'react';
 
 // Media
-import student from '../images/student.svg';
+import student from '../../images/student.svg';
 
 // Component
 ////////////

@@ -73,9 +73,8 @@
 
 #spinner {
   position: absolute;
-  left: 50%;
-  right: 50%;
-  top: 33%;
+  left: calc(50vw - 60px);
+  top: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
