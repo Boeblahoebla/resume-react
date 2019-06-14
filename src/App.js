@@ -24,8 +24,9 @@ function App() {
 
     // Effect hook to fetch the data on mount
     useEffect(() => {
-        Axios.get("https://api.myjson.com/bins/jp5k9")
+        Axios.get("https://api.myjson.com/bins/1dmump")
             .then(res => {
+                console.log(res.data);
                 setResumeData(res.data);
                 setIsLoading(false);
             }).catch(err => {
