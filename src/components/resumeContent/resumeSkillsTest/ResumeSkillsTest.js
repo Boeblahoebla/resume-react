@@ -5,7 +5,8 @@
 import React from 'react';
 
 // Components
-import ResumeSkills from './ResumeSkills';
+import ResumeSkills from './resumeSkills/ResumeSkills';
+import ResumeLangs from './resumeLang/ResumeLangs';
 import ResumeTest from './ResumeTest';
 
 
@@ -16,6 +17,7 @@ const ResumeSkillsTest = () => {
     return (
         <div className="col-12 col-lg-6">
             <ResumeSkills />
+            <ResumeLangs />
             <ResumeTest />
         </div>
     )
