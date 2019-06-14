@@ -19,9 +19,12 @@
         &--android::before,
         &--digipoint::before,
         &--backend::before,
+        &--support::before,
         &--frontend::before,
         &--reactedu::before,
         &--google::before,
+        &--meteo::before,
+        &--hogent::before,
         &--self::before {
           left: calc(50% - 1.45em);
           top: -4.3em;
