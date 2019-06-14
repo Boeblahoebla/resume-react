@@ -1,0 +1,146 @@
+{
+  "en": {
+    "exp": {
+      "exp-header": "Experience",
+      "exps": [
+        {
+          "header": "September 2018 - to date",
+          "text": "In September 2018 I started working as the project leader on the Digiwie-project at AteljeeVZW where all the unstructured data on Google Drive had to be migrated to a centralized system having a database and a client in the form of a website. Clients had to be able to enlist or delist in/from our courses while the teachers had to be able to create, update and delete courses, course material and handle student scores & attendance lists. The system thus served both as a portal for our clients as it is a means to manage all our resources & client data: a tailor-made CMS if you will... As technology stack I have chosen for the MERN stack, both for learning purposes and mastering MongoDB, Express, React & NodeJS while using the Agile approach. The system is expected to run on a Docker container, hosted on a Ubuntu server with a release somewhere in the near future."
+        },
+        {
+          "header": "November 2017 - May 2018",
+          "text": "In 2017 I created a native mobile application for the Android platform showing various weather products like high resolution Radar imagery and Live lightning detection throughthe use of publically available websockets. The imagery is rendered using the Google Maps API while the backend is running an Ubuntu system which reads Raw Radar data from various OpenDATA sources like the DWD & KNMI institutes. Using Python this raw data is processed to create sensible images. Afterwards the processed images are georeferenced using the Gdal library after being filtered by customized algorithms to rule out false-echo's, beam attenuation & missing data by various interpolation techniques. Afterwards the data is made available through the app."
+        },
+        {
+          "header": "January 2015 - to date",
+          "text": "Since 2015 I am working as a Digipoint admin at AteljeeVZW where I am the primary contact for people having computer problems, and clients in need of assistance. Besides that I'm also responsible writing reports for meetings and communicating the information to the rest of the team. The title also allows me to teach various ICT-related subjects to our students of all age & background and collegues such as devops, programming, database administration and development in general. In the latter part of 2018 I was appointed as the project leader for the Digiwie project to create a centralized system for all our data."
+        },
+        {
+          "header": "February 2015 - September 2016",
+          "text": "2015 marked the beginning of a 1.5 year period where I helped a weather website get on its feet. My tasks involved getting the server up & running while providing the people involved in the project with the meteorological products to fill the website with data. Using Python I created modern meteorological charts using complicated meteorological calculus, radar imagery, lightning-detection algorithms and radar-based detection algorithms using cluster recognition patterns. Afterwards the data needed georeferencing to display them on both the Google Maps API and offline maps using Matplotlib. The system ran on an Ubuntu machine. Since my departure the website hasn't been maintained anymore by the people involved. My work however was not in vain since the gained knowhow & technologies used are now being implemented in a new project where a collaboration with likeminded people allowed us to elaborated on the work already done. Expect a release soon!"
+        },
+        {
+          "header": "2003 - 2009",
+          "text": "During the 2003 - 2009 period I have had temporary jobs as network-administrator and support-related functions. I provided network and soft- and hardware support in the medical sector to mainly Doctors and hospitals in the Radiology department. In light of the migration to a more digital approach of taking MRI's and other echoes I was assigned the task of supporting the digitalisation, storage and office-network of the new systems. I temporarily worked at an institute which served as both a school and shelter for  troubled children where I provided support for all employees and worked as computer  technician/support engineer for a small office which provided support for several local  businesses."
+        }
+      ]
+    },
+    "edu": {
+      "edu-header": "Education",
+      "edus": [
+        {
+          "header": "September 2018 - to date",
+          "text": "In september 2018 I started a 2 year course in Frontend web development. The non-frontendmaterial covered involved programming techniques and analysis and using SQL to manage databases,create and optimize database models using database normalisations and ERD diagrams.The frontend material covered the unavoidable triangle of HTML5, CSS & Javascript. Thesemantics and use of the correct HTML5 tags were widely covered as were the newest CSS techniques like flexbox & the CSS grid, followed by the now widely used SCSS using BEM &SMACSS conventions. While vanilla-Javascript was extensively covered, it was followed by the jQuery library which is still widely used."
+        },
+        {
+          "header": "July 2018 - September 2018",
+          "text": "Using a course on Udemy I learned how to set up a full stack project using the MERN stack from the first line of code to deployment on Heroku. Throughout the project I was introduced to Redux as the state management system and how it can be implemented in React. During the projectthe difficulty gradually increased as we began exploring more in-depth React workings and HOC's. While React is used on the frontend the student also had to write a complete working backend with security measures & login-functionality using a JWT and build a fully functional RESTful API connecting to a MongoDB database through Express & NodeJS as javascript backend frameworks."
+        },
+        {
+          "header": "September 2017 - June 2018",
+          "text": "In september 2017 I enlisted in the Google Developer Challenge, a challenge organised by Google across the whole European continent. More than 200000 participants enlisted while Google granted only 10% of the participants to join the challenge based on motivation and programming skills. Being among the 20000 passed, the challenge was to create 3 Android projects while being coached by Google employees in Java, UX, GUI design & Android development in general. Only 10% would be able to pass based on wits, aiding fellow students, quality of the finished projects & adhering to the strict coding standards by Google. Again being one of the 10% I was rewarded with a full scholarship of 1 year being taught by developers of Google. After a successful review of my graduation-project I was gratified to receive the certificate of Android developer Nanodegree by Google through the Udacity learning platform."
+        },
+        {
+          "header": "2009 - to date",
+          "text": "Fueled by a gradual interest in Meteorology I learned DevOps and programming languages to generate and plot raw meteorological data from various international sources. To accomplish this I was immediately presented to Bash, Python and Cronjobs. I then needed to create sensibleoutput for the data-output which was now at my fingertips but in data formats I have never even heard of. To process those elusive HDF5, NetCDF and BUFR files I learned the GrADS scripting language, plotting and scientific abilities of libraries such as MPL and SciPy in Python and GIS tools such as Gdal and ArcGIS. The Flemish association for weather knowledge took notice of my work which elevated the Meteo-community to unknown standards and have since then invited me on a regular basis to give lectures in Meteorology, plotting techniques and analysis of extreme weather conditions using the products I am since then able to generate."
+        },
+        {
+          "header": "2001 - 2003",
+          "text": "In 2003 I enlisted in the evening education program of Applied ICT in Hogent. During a 3 year linear program we were educated in data structure, programming & analysis techniques, database administration and the by then booming .NET framework. After a succesful completion of my first year in which I excelled in databases and had more than decent scores in programming I was eager to complete my full program. In the latter half of the second year however I had to stop because of work & personal reasons, but the knowledge and experience, I gained during the nearly two years of studies formed the foundation of my abilities now. I might still go through the complete program again which is now a modular system if time, personal life, work and financial status agree."
+        },
+        {
+          "header": "2000 - to date",
+          "text": "Through the latter half of my 38 years I've been an autodidact in using all sorts of ICT related material, covering networking, operating systems, troubleshooting techniques, application development, web development, mobile development, various scripting languages and much more. I've been a curious person all my life which makes me somebody that gets triggered very easily to learn, discover new things and approaches other people use to tackle a problem. Collaboration is key!"
+        }
+      ]
+    },
+    "lang": {
+      "lang-header": "Languages",
+      "dutch": "Dutch",
+      "english": "English",
+      "french": "French",
+      "spoken": "Spoken",
+      "written": "Written"
+    },
+    "test": {
+      "test-header": "Testimonials",
+      "patrick": "\"Dzengiz is somebody you can always count on to get the job done. There is nothing I can not entrust him with. By himself he developed our full-stack web application to manage our clients, course material and online workshops while still having time to teach fellow collegues, help clients with their ICT related issues & do administrative tasks. His drive & engagement is second to none. You will not be disappointed to have him on your team!\"",
+      "michael": "\"Being nothing short of a mentor, Dzengiz brought me up to speed on how to use Python and various other scripting languages to generate meteorological products using a blend of coding skills, mathematics, dev-ops and creativity. I would not stand where I am if it wasn't for the guidance Dzengiz provided in my journey in the world of ICT and meteorology.\""
+    },
+    "personal": {
+      "marital-text": "Living together"
+    }
+  },
+  "nl": {
+    "exp": {
+      "exp-header": "Ervaring",
+      "exps": [
+        {
+          "header": "September 2018 - heden",
+          "text": "In september 2018 ben ik in AteljeeVZW aangesteld als projectleider voor het Digiwie-project, waarin alle ongestructureerde data op Google Drive diende gemigreerd te worden naar een gecentraliseerd systeem met een databank en een client- applicatie in de vorm van een website. Klanten moesten zich kunnen in- en uitschrijven in/uit onze cursussen terwijl de lesgevers een beheermodule nodig hadden om de cursussen en het cursusmateriaal te beheren, studentenscores bij te houden en aanwezigheden op te nemen. Als technologie heb ik gekozen voor de MERN stack, dit als leerproces om MongoDB, Express, React en NodeJS onder de knie te krijgen, en Agile te werken met oog op toekomstige uitbreiding. Het systeem wordt in de nabije toekomst verwacht in een Docker container gedeployed te worden."
+        },
+        {
+          "header": "November 2017 - Mei 2018",
+          "text": "In 2017 heb ik een private native mobiele applicatie ontwikkeld voor het Android platform die verschillende meteorologische producten zoals hoge resolutie radarbeelden en live bliksemdetectie toont. Gebruik makend van verschillende publieke websockets en OpenData- bronnen zoals het DWD & KNMI wordt er op de Ubuntu-backend ruwe data ingelezen om die uiteindelijk via de Google Maps API te renderen. Via Python wordt die ruwe data eerst verwerkt tot tastbare images. Na afloop worden deze via postprocessing door huisgemaakte algoritmes verwijderd van valse echo’s, radar-attenuatie en wordt lege data opgevuld door allerlei interpolatietechnieken. Nadat er georeferentie toegepast wordt op de verwerkte beelden via de Gdal- library wordt de data beschikbaar gesteld via de app."
+        },
+        {
+          "header": "Januari 2015 - heden",
+          "text": "Sinds 2015 werk ik in AteljeeVZW als digipunt-beheerder waar ik het primaire aanspreekpunt ben voor mensen met computerproblemen en les geef aan zowel klanten als collega's. Daarnaast ben ik ook verantwoordelijk voor de verslaggeving tijdens meetings en alles te communiceren naar de rest van het team. De titel laat me ook toe om zowel aan onze studenten van elke afkomst of leeftijd en collega’s les te geven in verschillende ICT-gerelateerde takken zoals devops, programmeren, database-administratie en ICT-technologie in het algemeen. In het najaar van 2018 ben ik aangesteld als projectleider van het Digiwie- project om een gecentraliseerd systeem te ontwikkelen voor al onze data."
+        },
+        {
+          "header": "Februari 2015 - September 2016",
+          "text": "2015 markeerde het begin van een anderhalf jaar waarin ik een meteo-website mee helpen ontwikkelen heb. Mijn taak hield in om de server op stellingen te zetten en de mensen die de website beheerden van meteorologische producten te voorzien die op de website werden tentoon gesteld. Via Python heb ik gebruik makend van complexte meteorologische calculus moderne meteorologische producten gegenereerd, radar-images geproduceerd en een onweerdetectiesysteem ontwikkeld, gebaseerd op detectiealgoritmes via cluster-herkenning. Na de flow van post-processing diende georeferentie toegepast te worden om die zowel via Google Maps als offline via Matplotlib plots aan de gebruiker beschikbaar te stellen. Het systeem werkte op een Ubuntu server. De website is na afloop jammer genoeg door de beheerders niet meer onderhouden geweest. Mijn werk daarentegen ziet nu nieuw licht in een gelijkaardig project waarop verder gebouwd wordt op de codebase van toen. Een release wordt in de toekomst verwacht."
+        },
+        {
+          "header": "2003 - 2009",
+          "text": "In de periode 2003 – 2009 werkte ik in verschillende netwerk en support-gerelateerde functies. Ik bood netwerk, soft- en hardware support in de medische sector aan voornamelijk Dokters en ziekenhuizen in de tak Radiologie. In het light van de migratie naar een meer digitale benadering van MRI’s en andere foto’s was mijn taak om support te leven in de digitalisatie, data-opslag en het netwerk van de nieuwe systemen. Ik werkte tijdelijk in een instituut voor probleemkinderen die ook als school fungeerde. Daar stond ik ook in voor de support voor alle in-house medewerkers en werkte als computertechnieker en support engineer voor een kleine KMO die support bood aan verschillende zaken in de buurt."
+        }
+      ]
+    },
+    "edu": {
+      "edu-header": "Opleiding",
+      "edus": [
+        {
+          "header": "September 2018 - heden",
+          "text": "In september 2018 startte ik een cursus van twee jaar in Frontend web development. Het non-frontend materiaal had betrekking tot programmeertechnieken & analyse en het gebruik van SQL om databanken te beheren, de creatie en optimalisatie van databankmodellen en ERD-diagrammen. Het frontend gedeelte benaderde de driehoek HTML5, CSS & Javascript. De semantiek en het correct gebruik van de HTML5 tags werden breed behandeld alsook de nieuwste CSS technieken zoals flexbox en het CSS grid, gevolgd door de nu veel gebruikte SCSS en de BEM & SMACSS conventies. Terwijl “vanilla-javascript” in-depth werd behandeld werd het opgevolgd door jQuery die nog steeds veel gebruikt wordt. Het eerste jaar is ondertussen succesvol afgerond"
+        },
+        {
+          "header": "Juli 2018 - September 2018",
+          "text": "Via een cursus op Udemy heb ik geleerd hoe ik een full stack project op zet, gebruik makend van de MERN stack. Dit van de eerste lijn code tot het uitrollen op Heroku. Doorheen het project werd ik geintroduceerd tot Redux als het state-management systeem en hoe het geimplementeerd wordt in React. Tijdens het project verhoogde de moeilijkheidsgraag gestaag wanneer we de meer in-depth werking van React en HOC’s begonnen te exploreren. Terwijl React op de frontend werd gebruikt, moesten we ook een complete backend implementeren met beveiliging en login-functionaliteit via een JWT en een volledig functionele RESTful API schrijven die via Express en NodeJS connecteert met een MongoDB databank."
+        },
+        {
+          "header": "September 2017 - Juni 2018",
+          "text": "In september 2017 heb ik mij ingeschreven in de “Google developer challenge”, een uitdaging georganiseerd door Google over het hele Europese continent. Van de meer dan 200000 inschrijvingen liet Google amper 10% toe op basis van motivatie en programmeerkennis. Als één van de 20000 was de uitdaging was om 3 Android projecten te ontwikkelen terwijl we coaching genoten van Google medewerkers in Java, UX, GUI ontwerp & Android ontwikkeling. Terug mochten enkel 10% hiervoor slagen, gebaseerd op wilskracht, medewerking in de community, hulp aan medestudenten en de qualiteit van de 3 projecten. Terug één van de 10% werd ik beloond met een volledige studiebeurs van 1 jaar waarin ik opgeleid werd door de medewerkers van Google als Android developer. Na een succesvolle review van mijn eindproject ontving ik het certificaat als Google certified Android developer door Google via het Udacity leerplatform."
+        },
+        {
+          "header": "2009 - heden",
+          "text": "Gedreven door geen klimmende interesse in meteorolgie leerde ik DevOps en verschillende talen om plots te maken van ruwe meteorologische data, afkomstig van een waaier aan internationale bronnen. Eer ik zo ver kon geraken moest eerst Linux, Bash, Python en Cronjobs gekend zijn. Om dan echt tastbare output te genereren van de ruwe output die ik toen kreeg uit mijn calculaties in bestandsformaten waar ik nog nooit had van gehoord waren verdere studies nodig. Om de ongekende HDF5, NetCDF en BUFR files te processen leerde ik GrADS scripting, de plot en wetenschappelijke mogelijkhkeden van de MPL en SciPy library voor Python en GIS tools zoals Gdal en ArcGis. De Vlaamse vereniging voor weerkunde merkte mijn progressie op die de meteocommunity tot ongekende hoogtes heeft getild. Zij inviteren mij sindsdien op regelmatige basis om lezingen te geven op vlak van meteorologie, plot- technieken en analyses van extreme weersituaties via de producten die ik sindsdien kan produceren."
+        },
+        {
+          "header": "2001 - 2003",
+          "text": "In 2003 schreef ik mij in aan de avondschool Toegepaste Informatica in HoGent. Gedurende een driejarig programma was dit een opleiding in datastructuur, programmatie en analysetechnieken, database administratie en het .NET framework wat die periode aan een enorme boom bezig was. Na het succesvol afronden van mijn eerste jaar waar ik een kei was in databanken en meer dan degelijke scores behaalde in programmeren, keek ik uit naar het afmaken van het volledig programma. In de laatste helft van het tweede jaar moest ik daarentegen stoppen voor werk en persoonlijke redenen, maar de kennis en ervaring die ik in de bijna 2 jaar van studies heb genoten legden de basis van mijn huidig kunnen. Ik denk er aan om nog om het volledige programma nogmaals te volgen, wat sindsdien is veranderd naar een modulair systeem als tijd, mijn persoonlijk leven, werk en financiële status dit mogelijk maakt."
+        },
+        {
+          "header": "2000 - heden",
+          "text": "Doorheen de laatste helft van mijn 38 jaar ben ik via zelfstudie op de hoogte gebleven van de relevante ICT-technieken, networking, besturingssystemen, troubleshooting, applicatieontwikkeling, web-ontwikkeling, allerlei script-talen en meer. Ik ben al heel mijn leven een curieus persoon en een autodidact, wat mij iemand maakt die gemakkelijk getriggerd wordt om bij te leren, nieuwe dingen te exploreren en andere benaderingen te proeven die anderen gebruiken om hetzelfde probleem op te lossen. Samenwerking is de sleutel!"
+        }
+      ]
+    },
+    "lang": {
+      "lang-header": "Talen",
+      "lang-dutch": "Nederlands",
+      "lang-english": "Engels",
+      "lang-french": "Frans",
+      "lang-spoken": "Spreken",
+      "lang-written": "Schrijven"
+    },
+    "test": {
+      "test-header": "Referenties",
+      "test1-text": "\"Dzengiz is iemand waarop je altijd kan rekenen om een taak te volbrengen. Er is niets wat ik hem niet kan toevertrouwen. Op zichzelf heeft hij onze full-stack web applicatie ontwikkeld om onze klanten, cursusmateriaal en online workshops te beheren terwijl hij nog steeds tijd ziet om de collega’s te helpen, hen bij te leren, klanten te helpen met hun ICT-gerelateerde vragen en administratieve taken te doen. Je zal niet ontgoocheld zijn om hem in uw team te hebben!\"",
+      "test2-text": "\"Als een mentor bracht Dzengiz mij op kennis om gebruik makend van Python en andere script-talen meteorologische producten te maken in een mix van code-vaardigheden, wiskunde, dev-ops en creativiteit. Ik zou niet staan waar ik nu sta was het niet voor de begeleiding Dzengiz mij heeft gegeven in mijn reis in de wereld van ICT en meteorologie.\""
+    },
+    "personal": {
+      "marital-text": "Samenwonend"
+    }
+  }
+}
