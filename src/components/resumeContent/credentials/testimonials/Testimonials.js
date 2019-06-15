@@ -5,14 +5,14 @@
 import React from 'react';
 
 // Media
-import patrick from '../../../images/patrick.png';
-import michael from '../../../images/michael.png'
+import patrick from '../../../../images/patrick.png';
+import michael from '../../../../images/michael.png'
 
 
 // Component
 ////////////
 
-const ResumeTest = () => {
+const Testimonials = () => {
     return (
         <div>
             {/* Testimonials header */}
@@ -58,4 +58,4 @@ const ResumeTest = () => {
 // Exports
 //////////
 
-export default ResumeTest;
+export default Testimonials;

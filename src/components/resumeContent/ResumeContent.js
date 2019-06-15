@@ -2,11 +2,11 @@
 //////////
 
 // Dependencies
-import React, { useState } from 'react';
+import React, {Fragment, useState} from 'react';
 
 // Components
-import ResumeExpEdu from './resumeExpEdu/ResumeExpEdu';
-import ResumeSkillsTest from './resumeSkillsTest/ResumeSkillsTest';
+import TimeLines from './timelines/TimeLines';
+import Credentials from './credentials/credentials';
 
 // Media
 import dutch from '../../images/dutch.png';
@@ -38,12 +38,12 @@ const ResumeContent = ({ resumeData }) => {
     // Choose the right language
     const dataInChosenLanguage = resumeData[lang];
 
-    console.log(dataInChosenLanguage);
-
     return (
-        <div className="row">
-            <ResumeExpEdu />
-            <ResumeSkillsTest />
+        <Fragment>
+            <div className="row">
+                <TimeLines data={dataInChosenLanguage}/>
+                <Credentials data={dataInChosenLanguage}/>
+            </div>
 
             {/* Language switcher */}
             <div className="language-switcher">
@@ -54,7 +54,8 @@ const ResumeContent = ({ resumeData }) => {
                     <img src={english} alt="Dutch language"/>
                 </button>
             </div>
-        </div>
+        </Fragment>
+
     )
 };
 

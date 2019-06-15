@@ -8,7 +8,7 @@ import React from 'react';
 // Component
 ////////////
 
-const ResumeSkillSet = () => {
+const SkillSet = () => {
     return (
         <div>
 
@@ -20,4 +20,4 @@ const ResumeSkillSet = () => {
 // Exports
 //////////
 
-export default ResumeSkillSet;
+export default SkillSet;

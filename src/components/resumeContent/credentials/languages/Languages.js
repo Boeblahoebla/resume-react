@@ -8,7 +8,7 @@ import React, { Fragment } from 'react';
 // Component
 ////////////
 
-const ResumeLangs = () => {
+const Languages = () => {
     return (
         <Fragment>
             {/* Languages header */}
@@ -108,4 +108,4 @@ const ResumeLangs = () => {
 // Exports
 //////////
 
-export default ResumeLangs;
+export default Languages;

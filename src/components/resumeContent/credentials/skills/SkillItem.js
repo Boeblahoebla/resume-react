@@ -8,7 +8,7 @@ import React from 'react';
 // Component
 ////////////
 
-const ResumeSkill = () => {
+const SkillItem = () => {
     return (
         <div>
 
@@ -20,4 +20,4 @@ const ResumeSkill = () => {
 // Exports
 //////////
 
-export default ResumeSkill;
+export default SkillItem;

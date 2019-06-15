@@ -6,12 +6,12 @@ import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
 
 // Components
-import Spinner from './components/Spinner';
-import Header from './components/header/Header';
-import ResumeContent from './components/resumeContent/ResumeContent';
+import Spinner from './Spinner';
+import Header from './header/Header';
+import ResumeContent from './resumeContent/ResumeContent';
 
 // Styling
-import './css/style.css';
+import '../css/style.css';
 
 
 // Component
@@ -24,7 +24,7 @@ function App() {
 
     // Effect hook to fetch the data on mount
     useEffect(() => {
-        Axios.get("https://api.myjson.com/bins/1dmump")
+        Axios.get("https://api.myjson.com/bins/183ywp")
             .then(res => {
                 console.log(res.data);
                 setResumeData(res.data);
@@ -57,4 +57,5 @@ function App() {
 
 // Export
 /////////
+
 export default App;

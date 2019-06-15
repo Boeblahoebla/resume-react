@@ -5,20 +5,18 @@
 import React from 'react';
 
 // Components
-import ResumeExperience from './ResumeExperience';
-import ResumeEducation from './ResumeEducation';
-
+import TimeLine from './TimeLine';
 
 // Component
 ////////////
 
-const ResumeExpEdu = ({ resumeData }) => {
+const TimeLines = ({ data }) => {
     return (
         <div className="col-12 col-lg-6">
             {/* Work Experience timeline */}
-            <ResumeExperience/>
+            <TimeLine data={data.exp} type="exp"/>
             {/* Education Experience timeline */}
-            <ResumeEducation />
+            <TimeLine data={data.edu} type="edu"/>
         </div>
     )
 };
@@ -27,4 +25,4 @@ const ResumeExpEdu = ({ resumeData }) => {
 // Exports
 //////////
 
-export default ResumeExpEdu;
+export default TimeLines;

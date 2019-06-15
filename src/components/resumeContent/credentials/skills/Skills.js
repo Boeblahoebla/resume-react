@@ -8,7 +8,7 @@ import React, { Fragment } from 'react';
 // Component
 ////////////
 
-const ResumeSkills = () => {
+const Skills = () => {
     return (
         <Fragment>
             {/* Skillsets header */}
@@ -223,4 +223,4 @@ const ResumeSkills = () => {
 // Exports
 //////////
 
-export default ResumeSkills;
+export default Skills;
