@@ -6,7 +6,7 @@ import React, {Fragment, useState} from 'react';
 
 // Components
 import TimeLines from './timelines/TimeLines';
-import Credentials from './credentials/credentials';
+import Credentials from './credentials/Credentials';
 
 // Media
 import dutch from '../../images/dutch.png';

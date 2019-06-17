@@ -2,13 +2,15 @@
 //////////
 
 // Dependencies
-import React, {useEffect, useState} from 'react';
-import Axios from 'axios';
+import React from 'react';
 
 // Components
 import Spinner from './Spinner';
 import Header from './header/Header';
 import ResumeContent from './resumeContent/ResumeContent';
+
+// Hooks
+import { useHttpRequest } from '../hooks/HttpRequest';
 
 // Styling
 import '../css/style.css';
@@ -18,31 +20,19 @@ import '../css/style.css';
 ////////////
 
 function App() {
-    // State
-    const [resumeData, setResumeData] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-
-    // Effect hook to fetch the data on mount
-    useEffect(() => {
-        Axios.get("https://api.myjson.com/bins/183ywp")
-            .then(res => {
-                console.log(res.data);
-                setResumeData(res.data);
-                setIsLoading(false);
-            }).catch(err => {
-            console.log("there was an error: " + err);
-        })
-    }, []);
+    // Hook to fetch the data on mount
+    const [isLoading, fetchedData] =
+        useHttpRequest('https://api.myjson.com/bins/183ywp', []);
 
     // Initialize & Generate the content
     let content;
-    if (isLoading) {
+    if (isLoading || !fetchedData) {
         content = <Spinner />
     } else {
         content = (
             <div>
                 <Header />
-                <ResumeContent resumeData={resumeData}/>
+                <ResumeContent resumeData={fetchedData}/>
             </div>
         )
     }
