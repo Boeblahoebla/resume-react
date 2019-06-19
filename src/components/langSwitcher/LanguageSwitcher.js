@@ -5,8 +5,8 @@
 import React from 'react';
 
 // Media
-import dutch from '../images/dutch.png';
-import english from '../images/english.png';
+import dutch from '../../images/dutch.png';
+import english from '../../images/english.png';
 
 
 // Component

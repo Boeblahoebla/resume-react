@@ -179,12 +179,144 @@
       "written": "Schrijven"
     },
     "test": {
-      "geader": "Referenties",
+      "header": "Referenties",
       "patrick": "\"Dzengiz is iemand waarop je altijd kan rekenen om een taak te volbrengen. Er is niets wat ik hem niet kan toevertrouwen. Op zichzelf heeft hij onze full-stack web applicatie ontwikkeld om onze klanten, cursusmateriaal en online workshops te beheren terwijl hij nog steeds tijd ziet om de collega’s te helpen, hen bij te leren, klanten te helpen met hun ICT-gerelateerde vragen en administratieve taken te doen. Je zal niet ontgoocheld zijn om hem in uw team te hebben!\"",
       "michael": "\"Als een mentor bracht Dzengiz mij op kennis om gebruik makend van Python en andere script-talen meteorologische producten te maken in een mix van code-vaardigheden, wiskunde, dev-ops en creativiteit. Ik zou niet staan waar ik nu sta was het niet voor de begeleiding Dzengiz mij heeft gegeven in mijn reis in de wereld van ICT en meteorologie.\""
     },
     "personal": {
       "maritalText": "Samenwonend"
+    }
+  },
+  "skills": [
+    {
+      "field": "Frontend development",
+      "flag": "web",
+      "scores": [
+        {
+          "topic": "HTML5",
+          "score": 80
+        },
+        {
+          "topic": "CSS",
+          "score": 75
+        },
+        {
+          "topic": "SCSS",
+          "score": 70
+        },
+        {
+          "topic": "Bootstrap",
+          "score": 80
+        },
+        {
+          "topic": "Javascript",
+          "score": 80
+        },
+        {
+          "topic": "jQuery",
+          "score": 70
+        }
+      ]
+    },
+    {
+      "field": "Frontend frameworks",
+      "flag": "web",
+      "scores": [
+        {
+          "topic": "React",
+          "score": 75
+        },
+        {
+          "topic": "Redux",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "field": "Mobile development",
+      "flag": "mobile",
+      "scores": [
+        {
+          "topic": "Android Studio",
+          "score": 75
+        },
+        {
+          "topic": "Cordova",
+          "score": 70
+        }
+      ]
+    },
+    {
+      "field": "Databases",
+      "flag": "db",
+      "scores": [
+        {
+          "topic": "SQL",
+          "score": 80
+        },
+        {
+          "topic": "MongoDB",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "field": "Backend development",
+      "flag": "backend",
+      "scores": [
+        {
+          "topic": "NodeJS",
+          "score": 80
+        },
+        {
+          "topic": "Express",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "field": "DevOps",
+      "flag": "devops",
+      "scores": [
+        {
+          "topic": "Linux",
+          "score": 60
+        },
+        {
+          "topic": "Apache",
+          "score": 50
+        },
+        {
+          "topic": "Docker",
+          "score": 35
+        },
+        {
+          "topic": "Vagrant",
+          "score": 35
+        },
+        {
+          "topic": "Bash",
+          "score": 70
+        },
+        {
+          "topic": "Python",
+          "score": 75
+        }
+      ]
+    }
+  ],
+  "languages": {
+    "dutch": {
+      "spoken": 95,
+      "written": 95
+    },
+    "english": {
+      "spoken": 90,
+      "written": 85
+    },
+    "french": {
+      "spoken": 60,
+      "written": 70
     }
   }
 }

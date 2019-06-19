@@ -5,7 +5,7 @@
 import React from 'react';
 
 // Media
-import spinner from '../images/spinner.gif';
+import spinner from '../../images/spinner.gif';
 
 // Component
 ////////////

@@ -7,7 +7,7 @@ import React, {Fragment, useState} from 'react';
 // Components
 import TimeLines from './timelines/TimeLines';
 import Credentials from './credentials/Credentials';
-import LanguageSwitcher from '../LanguageSwitcher';
+import LanguageSwitcher from '../langSwitcher/LanguageSwitcher';
 
 // Styling
 import '../../css/style.css';
@@ -20,6 +20,9 @@ const ResumeContent = ({ resumeData }) => {
     // Language state
     const [ lang, setLang ] = useState('nl');
 
+    // Fetch the languages & skills from the resumeData
+    const { languages, skills } = resumeData;
+
     // Language switch handler
     const changeLanguage = chosenLang => {
         setLang(chosenLang);
@@ -31,8 +34,12 @@ const ResumeContent = ({ resumeData }) => {
     return (
         <Fragment>
             <div className="row">
-                <TimeLines data={dataInChosenLanguage}/>
-                <Credentials data={dataInChosenLanguage}/>
+                <TimeLines
+                    data={dataInChosenLanguage}/>
+                <Credentials
+                    data={dataInChosenLanguage}
+                    skillSets={skills}
+                    languages={languages}/>
             </div>
 
             {/* Language switcher */}

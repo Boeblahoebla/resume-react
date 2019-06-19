@@ -5,7 +5,7 @@
 import React from 'react';
 
 // Components
-import Spinner from './Spinner';
+import Spinner from './common/Spinner';
 import Header from './header/Header';
 import ResumeContent from './resumeContent/ResumeContent';
 
@@ -22,7 +22,7 @@ import '../css/style.css';
 function App() {
     // Hook to fetch the data on mount
     const [isLoading, fetchedData] =
-        useHttpRequest('https://api.myjson.com/bins/183ywp', []);
+        useHttpRequest('https://api.myjson.com/bins/10ea85', []);
 
     // Initialize & Generate the content
     let content;
