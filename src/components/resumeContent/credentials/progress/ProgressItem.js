@@ -2,16 +2,17 @@
 //////////
 
 // Dependencies
-import React, {Fragment} from 'react';
+import React from 'react';
 
 
 // Component
 ////////////
 
-const SkillItem = ({topic, score}) => {
+const SkillItem = ({ topic, score }) => {
 
     // Find the right color for the progress bar
     let colorClass = '';
+
     if(score < 50) {
         colorClass = 'bg-secondary'
     } else if (score < 75) {

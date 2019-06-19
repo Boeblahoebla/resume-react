@@ -76,18 +76,68 @@
         }
       ]
     },
+    "skill": {
+      "header": "Relevant skills"
+    },
     "lang": {
       "header": "Languages",
-      "dutch": "Dutch",
-      "english": "English",
-      "french": "French",
-      "spoken": "Spoken",
-      "written": "Written"
+      "languages": [
+        {
+          "field": "Dutch",
+          "flag": "lang",
+          "scores": [
+            {
+              "topic": "Spoken",
+              "score": 95
+            },
+            {
+              "topic": "Written",
+              "score": 95
+            }
+          ]
+        },
+        {
+          "field": "English",
+          "flag": "lang",
+          "scores": [
+            {
+              "topic": "Spoken",
+              "score": 90
+            },
+            {
+              "topic": "Written",
+              "score": 85
+            }
+          ]
+        },
+        {
+          "field": "French",
+          "flag": "lang",
+          "scores": [
+            {
+              "topic": "Spoken",
+              "score": 60
+            },
+            {
+              "topic": "Written",
+              "score": 65
+            }
+          ]
+        }
+      ]
     },
     "test": {
       "header": "Testimonials",
-      "patrick": "\"Dzengiz is somebody you can always count on to get the job done. There is nothing I can not entrust him with. By himself he developed our full-stack web application to manage our clients, course material and online workshops while still having time to teach fellow collegues, help clients with their ICT related issues & do administrative tasks. His drive & engagement is second to none. You will not be disappointed to have him on your team!\"",
-      "michael": "\"Being nothing short of a mentor, Dzengiz brought me up to speed on how to use Python and various other scripting languages to generate meteorological products using a blend of coding skills, mathematics, dev-ops and creativity. I would not stand where I am if it wasn't for the guidance Dzengiz provided in my journey in the world of ICT and meteorology.\""
+      "testimonials": [
+        {
+          "name": "Patrick Moesick",
+          "testimonial": "\"Dzengiz is somebody you can always count on to get the job done. There is nothing I can not entrust him with. By himself he developed our full-stack web application to manage our clients, course material and online workshops while still having time to teach fellow collegues, help clients with their ICT related issues & do administrative tasks. His drive & engagement is second to none. You will not be disappointed to have him on your team!\""
+        },
+        {
+          "name": "Michaël Verhaeghe",
+          "testimonial": "\"Being nothing short of a mentor, Dzengiz brought me up to speed on how to use Python and various other scripting languages to generate meteorological products using a blend of coding skills, mathematics, dev-ops and creativity. I would not stand where I am if it wasn't for the guidance Dzengiz provided in my journey in the world of ICT and meteorology.\""
+        }
+      ]
     },
     "personal": {
       "maritalText": "Living together"
@@ -170,18 +220,68 @@
         }
       ]
     },
+    "skill": {
+      "header": "Relevante kennis"
+    },
     "lang": {
       "header": "Talen",
-      "dutch": "Nederlands",
-      "english": "Engels",
-      "french": "Frans",
-      "spoken": "Spreken",
-      "written": "Schrijven"
+      "languages": [
+        {
+          "field": "Nederlands",
+          "flag": "lang",
+          "scores": [
+            {
+              "topic": "Spreken",
+              "score": 95
+            },
+            {
+              "topic": "Schrijven",
+              "score": 95
+            }
+          ]
+        },
+        {
+          "field": "Engels",
+          "flag": "lang",
+          "scores": [
+            {
+              "topic": "Spreken",
+              "score": 90
+            },
+            {
+              "topic": "Schrijven",
+              "score": 85
+            }
+          ]
+        },
+        {
+          "field": "Frans",
+          "flag": "lang",
+          "scores": [
+            {
+              "topic": "Spreken",
+              "score": 60
+            },
+            {
+              "topic": "Schrijven",
+              "score": 65
+            }
+          ]
+        }
+      ]
     },
     "test": {
       "header": "Referenties",
-      "patrick": "\"Dzengiz is iemand waarop je altijd kan rekenen om een taak te volbrengen. Er is niets wat ik hem niet kan toevertrouwen. Op zichzelf heeft hij onze full-stack web applicatie ontwikkeld om onze klanten, cursusmateriaal en online workshops te beheren terwijl hij nog steeds tijd ziet om de collega’s te helpen, hen bij te leren, klanten te helpen met hun ICT-gerelateerde vragen en administratieve taken te doen. Je zal niet ontgoocheld zijn om hem in uw team te hebben!\"",
-      "michael": "\"Als een mentor bracht Dzengiz mij op kennis om gebruik makend van Python en andere script-talen meteorologische producten te maken in een mix van code-vaardigheden, wiskunde, dev-ops en creativiteit. Ik zou niet staan waar ik nu sta was het niet voor de begeleiding Dzengiz mij heeft gegeven in mijn reis in de wereld van ICT en meteorologie.\""
+      "testimonials": [
+        {
+          "name": "Patrick Moesick",
+          "testimonial": "\"Dzengiz is iemand waarop je altijd kan rekenen om een taak te volbrengen. Er is niets wat ik hem niet kan toevertrouwen. Op zichzelf heeft hij onze full-stack web applicatie ontwikkeld om onze klanten, cursusmateriaal en online workshops te beheren terwijl hij nog steeds tijd ziet om de collega’s te helpen, hen bij te leren, klanten te helpen met hun ICT-gerelateerde vragen en administratieve taken te doen. Je zal niet ontgoocheld zijn om hem in uw team te hebben!\""
+        },
+        {
+          "name": "Michael Verhaeghe",
+          "testimonial": "\"Als een mentor bracht Dzengiz mij op kennis om gebruik makend van Python en andere script-talen meteorologische producten te maken in een mix van code-vaardigheden, wiskunde, dev-ops en creativiteit. Ik zou niet staan waar ik nu sta was het niet voor de begeleiding Dzengiz mij heeft gegeven in mijn reis in de wereld van ICT en meteorologie.\""
+        }
+      ]
     },
     "personal": {
       "maritalText": "Samenwonend"
@@ -304,19 +404,5 @@
         }
       ]
     }
-  ],
-  "languages": {
-    "dutch": {
-      "spoken": 95,
-      "written": 95
-    },
-    "english": {
-      "spoken": 90,
-      "written": 85
-    },
-    "french": {
-      "spoken": 60,
-      "written": 70
-    }
-  }
+  ]
 }

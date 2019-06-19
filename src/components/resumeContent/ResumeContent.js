@@ -20,7 +20,7 @@ const ResumeContent = ({ resumeData }) => {
     // Language state
     const [ lang, setLang ] = useState('nl');
 
-    // Fetch the languages & skills from the resumeData
+    // Fetch the Languages & skills from the resumeData
     const { languages, skills } = resumeData;
 
     // Language switch handler

@@ -22,7 +22,7 @@ import '../css/style.css';
 function App() {
     // Hook to fetch the data on mount
     const [isLoading, fetchedData] =
-        useHttpRequest('https://api.myjson.com/bins/10ea85', []);
+        useHttpRequest('https://api.myjson.com/bins/fagtx', []);
 
     // Initialize & Generate the content
     let content;

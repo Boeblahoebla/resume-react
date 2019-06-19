@@ -5,26 +5,20 @@
 import React from 'react';
 
 // Components
-import Skills from './skills/Skills';
-import Languages from './languages/Languages';
+import Progresses from './progress/Progresses';
 import Testimonials from './testimonials/Testimonials';
 
 
 // Component
 ////////////
 
-const Credentials = ({ data, skillSets, languages }) => {
-
-    console.log("info in Credentials component");
-    console.log(data);
-    console.log(skillSets);
-    console.log(languages);
+const Credentials = ({ data, skillSets}) => {
 
     return (
         <div className="col-12 col-lg-6">
-            <Skills data={data} skillSets={skillSets} />
-            <Languages data={data} languages={languages}/>
-            <Testimonials data={data}/>
+            <Progresses data={data.skill} progressSets={skillSets} type="skill" />
+            <Progresses data={data.lang} progressSets={data.lang.languages} type="lang" />
+            <Testimonials data={data.test}/>
         </div>
     )
 };
