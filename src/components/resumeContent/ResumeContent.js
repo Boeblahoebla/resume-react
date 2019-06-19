@@ -7,10 +7,7 @@ import React, {Fragment, useState} from 'react';
 // Components
 import TimeLines from './timelines/TimeLines';
 import Credentials from './credentials/Credentials';
-
-// Media
-import dutch from '../../images/dutch.png';
-import english from '../../images/english.png';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 // Styling
 import '../../css/style.css';
@@ -23,19 +20,12 @@ const ResumeContent = ({ resumeData }) => {
     // Language state
     const [ lang, setLang ] = useState('nl');
 
-    // Highlight the chose language
-    let dutchHidden = '';
-    let englishHidden = '';
+    // Language switch handler
+    const changeLanguage = chosenLang => {
+        setLang(chosenLang);
+    };
 
-    if (lang !== 'en') {
-        englishHidden = 'hidden';
-        dutchHidden = '';
-    } else {
-        englishHidden = '';
-        dutchHidden = 'hidden';
-    }
-
-    // Choose the right language
+    // Set the data in the chosen language
     const dataInChosenLanguage = resumeData[lang];
 
     return (
@@ -46,14 +36,7 @@ const ResumeContent = ({ resumeData }) => {
             </div>
 
             {/* Language switcher */}
-            <div className="language-switcher">
-                <button className={`translate ${dutchHidden}`} id="nl" onClick={() => setLang('nl')}>
-                    <img src={dutch} alt="Dutch language"/>
-                </button>
-                <button className={`translate ${englishHidden}`} id="en" onClick={() => setLang('en')}>
-                    <img src={english} alt="Dutch language"/>
-                </button>
-            </div>
+            <LanguageSwitcher setLang={changeLanguage} chosenLang={lang}/>
         </Fragment>
 
     )
