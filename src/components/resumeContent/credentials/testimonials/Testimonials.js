@@ -14,9 +14,9 @@ import TestimonialItem from '../testimonials/TestimonialItem';
 const Testimonials = ({ data }) => {
 
     // Generate the Testimonials
-    const testimonials = data.testimonials.map(testimonial => (
-        <TestimonialItem data={testimonial} />
-    ))
+    const testimonials = data.testimonials.map((testimonial, index) => (
+        <TestimonialItem data={testimonial} key={index}/>
+    ));
 
     return (
         <div>
