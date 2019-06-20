@@ -26,13 +26,43 @@
 
     &__content {
 
-      p:hover {
-        cursor: pointer;
-        background: $paragraphs-bg-color-hover;
+      p {
+        position: relative;
+        margin-bottom: 0.5em;
+
+        &:hover {
+          background: rgb(240, 240, 240);
+          cursor: pointer;
+        }
+
+        &.expand::after, &.contract::after {
+          font-family: "Font Awesome 5 Free", sans-serif;
+          color: white;
+          background-color: $bootstrap-blue-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 0.8em;
+          width: 0.8em;
+          border-radius: 50%;
+          font-size: 1.5em;
+          font-weight: 900;
+          position: absolute;
+          bottom: -0.9em;
+          right: -0.55em;
+        }
+
+        &.expand::after {
+          content:'\f0ab';
+        }
+
+        &.contract::after {
+          content:'\f0aa';
+        }
       }
 
       &::after {
-        font-family: "Font Awesome 5 Free";
+        font-family: "Font Awesome 5 Free", sans-serif;
         font-weight: 900;
         content: "\f254";
         color: $icon-color;

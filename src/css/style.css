@@ -130,12 +130,38 @@
   position: absolute;
   border-radius: 50%;
 }
+.tl__item__content p {
+  position: relative;
+  margin-bottom: 0.5em;
+}
 .tl__item__content p:hover {
+  background: #f0f0f0;
   cursor: pointer;
-  background: #f3f3f3;
+}
+.tl__item__content p.expand::after, .tl__item__content p.contract::after {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  color: white;
+  background-color: #33b5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-weight: 900;
+  position: absolute;
+  bottom: -0.9em;
+  right: -0.55em;
+}
+.tl__item__content p.expand::after {
+  content: "";
+}
+.tl__item__content p.contract::after {
+  content: "";
 }
 .tl__item__content::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", sans-serif;
   font-weight: 900;
   content: "";
   color: rgba(100, 100, 100, 0.25);
@@ -265,14 +291,37 @@
   position: relative;
 }
 .credentials__section--testimonial p {
-  font-style: italic;
+  position: relative;
 }
 .credentials__section--testimonial p:hover {
+  background: #f0f0f0;
   cursor: pointer;
-  background: #f3f3f3;
+}
+.credentials__section--testimonial p.expand::after, .credentials__section--testimonial p.contract::after {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  color: white;
+  background-color: #33b5e5;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-weight: 900;
+  position: absolute;
+  bottom: -1.25em;
+  right: -0.55em;
+}
+.credentials__section--testimonial p.expand::after {
+  content: "";
+}
+.credentials__section--testimonial p.contract::after {
+  content: "";
 }
 .credentials__section--web::before, .credentials__section--mobile::before, .credentials__section--db::before, .credentials__section--backend::before, .credentials__section--devops::before, .credentials__section--lang::before, .credentials__section--testimonial::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", sans-serif;
   content: "";
   font-weight: 900;
   color: rgba(100, 100, 100, 0.25);

@@ -24,7 +24,7 @@ const Progresses = ({ data, progressSets, type }) => {
     return (
         <Fragment>
             {/* Progress header */}
-            <div className="header header--credentials text-center">
+            <div className="header header--credentials">
                 <h1 className="display-4">{headerContent}</h1>
             </div>
 

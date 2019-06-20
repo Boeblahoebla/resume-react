@@ -16,11 +16,16 @@ const TestimonialItem = ({ data }) => {
 
     // State
     const [paragraphContent, setParagraphContent] = useState(data.testimonial);
+    const [expandContractClass, setExpandContractClass] = useState('expand');
+
+
+    // Fetch the testimonial from the data in the props
+    const { testimonial } = data;
 
     // When the component receives new props, reset the paragraphContent
     useEffect(() => {
-        setParagraphContent(data.testimonial.substring(0, 100) + ' ...');
-    }, [data.testimonial]);
+        setParagraphContent(testimonial.substring(0, 125) + ' ...');
+    }, [testimonial]);
 
     // Find the right avatar
     let avatar;
@@ -34,17 +39,20 @@ const TestimonialItem = ({ data }) => {
     // Handler to expand or contract the paragraph
     const paragraphContentHandler = () => {
         if (paragraphContent.indexOf(' ...') > -1) {
-            setParagraphContent(data.testimonial)
+            setParagraphContent(testimonial);
+            setExpandContractClass('contract');
+
         } else {
-            setParagraphContent(data.testimonial.substring(0, 100) + ' ...');
+            setParagraphContent(testimonial.substring(0, 125) + ' ...');
+            setExpandContractClass('expand');
         }
     };
 
     return (
         <div className="credentials__section credentials__section--testimonial">
-            <h3>Patrick Moesick <small className="text-muted">- AteljeeVZW</small></h3>
-            <div className="credentials__section__item mb-2">
-                <p className="mb-0 lang" data-key="test1-text" onClick={() => paragraphContentHandler()}>
+            <h3>{data.name} <small className="text-muted">- {data.where}</small></h3>
+            <div className="credentials__section__item">
+                <p className={expandContractClass} data-key="test1-text" onClick={() => paragraphContentHandler()}>
                     {paragraphContent}
                 </p>
             </div>

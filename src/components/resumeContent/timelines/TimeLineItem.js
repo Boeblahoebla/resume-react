@@ -14,18 +14,22 @@ const TimeLineItem = ({expEdu}) => {
 
     // State
     const [paragraphContent, setParagraphContent] = useState(text);
+    const [expandContractClass, setExpandContractClass] = useState('expand');
 
     // When the component receives new props, reset the paragraphContent
     useEffect(() => {
-        setParagraphContent(text.substring(0, 100) + ' ...');
+        setParagraphContent(text.substring(0, 125) + ' ...');
     }, [text]);
 
     // Handler to expand or contract the paragraph
     const paragraphContentHandler = () => {
+
         if (paragraphContent.indexOf(' ...') > -1) {
-            setParagraphContent(text)
+            setParagraphContent(text);
+            setExpandContractClass('contract')
         } else {
-            setParagraphContent(text.substring(0, 100) + ' ...');
+            setParagraphContent(text.substring(0, 125) + ' ...');
+            setExpandContractClass('expand')
         }
     };
 
@@ -38,7 +42,7 @@ const TimeLineItem = ({expEdu}) => {
                         {timeframe}
                     </strong>
                 </div>
-                <p className="lang" onClick={() => paragraphContentHandler()}>
+                <p className={expandContractClass} onClick={() => paragraphContentHandler()}>
                     {paragraphContent}
                 </p>
             </div>
