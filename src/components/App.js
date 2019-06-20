@@ -6,7 +6,7 @@ import React from 'react';
 
 // Components
 import Spinner from './common/Spinner';
-import Header from './header/Header';
+import PageHeader from './header/PageHeader';
 import ResumeContent from './resumeContent/ResumeContent';
 
 // Hooks
@@ -22,7 +22,7 @@ import '../css/style.css';
 function App() {
     // Hook to fetch the data on mount
     const [isLoading, fetchedData] =
-        useHttpRequest('https://api.myjson.com/bins/fagtx', []);
+        useHttpRequest('https://api.myjson.com/bins/6zarp', []);
 
     // Initialize & Generate the content
     let content;
@@ -31,7 +31,7 @@ function App() {
     } else {
         content = (
             <div>
-                <Header />
+                <PageHeader />
                 <ResumeContent resumeData={fetchedData}/>
             </div>
         )

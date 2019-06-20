@@ -10,7 +10,7 @@ import student from '../../images/student.svg';
 // Component
 ////////////
 
-const Header = () => {
+const PageHeader = () => {
     return (
         <div className="row text-center mb-4">
             <div className="col-12">
@@ -30,4 +30,4 @@ const Header = () => {
 // Exports
 //////////
 
-export default Header;
+export default PageHeader;

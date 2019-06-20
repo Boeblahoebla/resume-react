@@ -8,6 +8,10 @@
   position:relative;
   text-align: center;
 
+  &--work-edu {
+    padding-left: 4.5rem;
+  }
+
   &--work::before, &--edu::before {
     font-family: "Font Awesome 5 Free";
     height: 2em;

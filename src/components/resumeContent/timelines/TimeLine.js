@@ -29,7 +29,7 @@ const TimeLine = ({data, type}) => {
     return (
         <Fragment>
             {/* Header */}
-            <div className="header header--work">
+            <div className="header header--work header--work-edu">
                 <h1 className="display-4 lang">{data.header}</h1>
             </div>
 

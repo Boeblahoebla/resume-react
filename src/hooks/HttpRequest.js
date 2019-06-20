@@ -23,7 +23,7 @@ export const useHttpRequest = (url, dependencies) => {
             }).catch(err => {
                 console.log("there was an error: " + err);
             })
-    }, dependencies);
+    }, [url]);
 
     return [isLoading, fetchedData]
 };

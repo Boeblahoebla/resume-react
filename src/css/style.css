@@ -9,6 +9,9 @@
   position: relative;
   text-align: center;
 }
+.header--work-edu {
+  padding-left: 4.5rem;
+}
 .header--work::before, .header--edu::before {
   font-family: "Font Awesome 5 Free";
   height: 2em;
@@ -378,6 +381,10 @@
 @media screen and (max-width: 991px) {
   .container-fluid {
     padding: 3em 2em;
+  }
+
+  .header--work-edu {
+    padding-left: 0;
   }
 
   .tl {
