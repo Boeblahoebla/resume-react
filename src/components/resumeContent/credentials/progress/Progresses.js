@@ -11,21 +11,19 @@ import ProgressSet from '../progress/ProgressSet'
 // Component
 ////////////
 
-const Progresses = ({ data, progressSets, type }) => {
+const Progresses = ({ header, progressSets }) => {
 
     // Generate skills
     const progressContent = progressSets.map((progressSet, index) => (
         <ProgressSet progressSet={progressSet} flag={progressSet.flag} key={index}/>
     ));
 
-    // Generate the header content
-    const headerContent = (type === 'skill') ? data.header : data.header;
 
     return (
         <Fragment>
             {/* Progress header */}
             <div className="header header--credentials">
-                <h1 className="display-4">{headerContent}</h1>
+                <h1 className="display-4">{header}</h1>
             </div>
 
             {/* Progress content */}

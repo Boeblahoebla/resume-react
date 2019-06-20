@@ -12,29 +12,20 @@ import michael from '../../../../images/michael.png'
 // Component
 ////////////
 
-const TestimonialItem = ({ data }) => {
+const TestimonialItem = ({ testimonial, name, where }) => {
 
     // State
-    const [paragraphContent, setParagraphContent] = useState(data.testimonial);
+    const [paragraphContent, setParagraphContent] = useState(testimonial);
     const [expandContractClass, setExpandContractClass] = useState('expand');
 
-
-    // Fetch the testimonial from the data in the props
-    const { testimonial } = data;
-
-    // When the component receives new props, reset the paragraphContent
+    // When the component receives new props by switching the language,
+    // reset the paragraphContent
     useEffect(() => {
         setParagraphContent(testimonial.substring(0, 125) + ' ...');
     }, [testimonial]);
 
     // Find the right avatar
-    let avatar;
-
-    if(data.name.toLowerCase().indexOf('patrick') > -1 )  {
-        avatar = patrick
-    } else {
-        avatar = michael
-    }
+    const avatar = (name.toLowerCase().indexOf('patrick') > -1 ) ? patrick : michael;
 
     // Handler to expand or contract the paragraph
     const paragraphContentHandler = () => {
@@ -50,7 +41,7 @@ const TestimonialItem = ({ data }) => {
 
     return (
         <div className="credentials__section credentials__section--testimonial">
-            <h3>{data.name} <small className="text-muted">- {data.where}</small></h3>
+            <h3>{name} <small className="text-muted">- {where}</small></h3>
             <div className="credentials__section__item">
                 <p className={expandContractClass} data-key="test1-text" onClick={() => paragraphContentHandler()}>
                     {paragraphContent}

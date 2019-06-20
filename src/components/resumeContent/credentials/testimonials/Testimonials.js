@@ -11,25 +11,25 @@ import TestimonialItem from '../testimonials/TestimonialItem';
 // Component
 ////////////
 
-const Testimonials = ({ data }) => {
+const Testimonials = ({ header, testimonials }) => {
 
     // Generate the Testimonials
-    const testimonials = data.testimonials.map((testimonial, index) => (
-        <TestimonialItem data={testimonial} key={index}/>
+    const testimonialItems = testimonials.map((testimonial, index) => (
+        <TestimonialItem testimonial={testimonial.testimonial} name={testimonial.name} where={testimonial.where} key={index}/>
     ));
 
     return (
         <div>
             {/* Testimonials header */}
             <div className="header header--credentials text-center">
-                <h1 className="display-4 lang" data-key="test-header">
-                    {data.header}
+                <h1 className="display-4">
+                    {header}
                 </h1>
             </div>
 
             {/* Testimonials list */}
             <div className="credentials">
-                {testimonials}
+                {testimonialItems}
             </div>
         </div>
     )

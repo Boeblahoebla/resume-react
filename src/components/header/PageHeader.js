@@ -17,7 +17,7 @@ const PageHeader = () => {
                 <div className="avatar mb-2">
                     <img src={student} alt="Student avatar" height="200px"/>
                 </div>
-                <div className="badge badge-warning p-2 mb-2">Web Developer</div>
+                <div className="badge badge-warning p-2 mb-2 mt-2">Web Developer</div>
                 <div>
                     <p className="lead">Dzengiz Tafa</p>
                 </div>
