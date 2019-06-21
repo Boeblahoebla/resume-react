@@ -4,6 +4,32 @@
   position: relative;
 }
 
+p {
+  position: relative;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+p.expand::after, p.contract::after {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  color: white;
+  background-color: #33b5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-weight: 900;
+  position: absolute;
+}
+p.expand::after {
+  content: "";
+}
+p.contract::after {
+  content: "";
+}
+
 .header {
   padding: 1em;
   position: relative;
@@ -37,7 +63,7 @@
 }
 .header--work::after, .header--edu::after {
   content: "";
-  height: 3.19em;
+  height: 4.2em;
   width: 3px;
   background: rgba(200, 200, 200, 0.3);
   position: absolute;
@@ -121,7 +147,7 @@
 .tl__item {
   position: relative;
   padding: 1em;
-  margin: 2.5em 0;
+  margin: 3.5em 0;
 }
 .tl__item__content::before, .tl__item__content::after {
   display: flex;
@@ -131,7 +157,6 @@
   border-radius: 50%;
 }
 .tl__item__content p {
-  position: relative;
   margin-bottom: 0.5em;
 }
 .tl__item__content p:hover {
@@ -139,26 +164,8 @@
   cursor: pointer;
 }
 .tl__item__content p.expand::after, .tl__item__content p.contract::after {
-  font-family: "Font Awesome 5 Free", sans-serif;
-  color: white;
-  background-color: #33b5e5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0.8em;
-  width: 0.8em;
-  border-radius: 50%;
-  font-size: 1.5em;
-  font-weight: 900;
-  position: absolute;
   bottom: -0.9em;
   right: -0.55em;
-}
-.tl__item__content p.expand::after {
-  content: "";
-}
-.tl__item__content p.contract::after {
-  content: "";
 }
 .tl__item__content::after {
   font-family: "Font Awesome 5 Free", sans-serif;
@@ -285,12 +292,9 @@
 }
 .credentials__section {
   padding: 1em;
-  margin: 2.5em 0 2.5em 0;
+  margin: 3.5em 0 3.5em 0;
   border: 3px solid rgba(100, 100, 100, 0.1);
   border-radius: 15px;
-  position: relative;
-}
-.credentials__section--testimonial p {
   position: relative;
 }
 .credentials__section--testimonial p:hover {
@@ -298,27 +302,8 @@
   cursor: pointer;
 }
 .credentials__section--testimonial p.expand::after, .credentials__section--testimonial p.contract::after {
-  font-family: "Font Awesome 5 Free", sans-serif;
-  color: white;
-  background-color: #33b5e5;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0.8em;
-  width: 0.8em;
-  border-radius: 50%;
-  font-size: 1.5em;
-  font-weight: 900;
-  position: absolute;
-  bottom: -1.25em;
+  bottom: -0.9em;
   right: -0.55em;
-}
-.credentials__section--testimonial p.expand::after {
-  content: "";
-}
-.credentials__section--testimonial p.contract::after {
-  content: "";
 }
 .credentials__section--web::before, .credentials__section--mobile::before, .credentials__section--db::before, .credentials__section--backend::before, .credentials__section--devops::before, .credentials__section--lang::before, .credentials__section--testimonial::before {
   font-family: "Font Awesome 5 Free", sans-serif;
@@ -366,8 +351,8 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  top: -2em;
-  right: -1.7em;
+  top: -1.8em;
+  right: -1.55em;
   z-index: 1;
 }
 .credentials__section__item {

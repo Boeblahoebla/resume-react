@@ -14,7 +14,7 @@
   &__item {
     position: relative;
     padding: 1em;
-    margin: 2.5em 0;
+    margin: 3.5em 0;
 
     &__content::before, &__content::after {
       display: flex;
@@ -27,7 +27,6 @@
     &__content {
 
       p {
-        position: relative;
         margin-bottom: 0.5em;
 
         &:hover {
@@ -36,28 +35,8 @@
         }
 
         &.expand::after, &.contract::after {
-          font-family: "Font Awesome 5 Free", sans-serif;
-          color: white;
-          background-color: $bootstrap-blue-color;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 0.8em;
-          width: 0.8em;
-          border-radius: 50%;
-          font-size: 1.5em;
-          font-weight: 900;
-          position: absolute;
           bottom: -0.9em;
           right: -0.55em;
-        }
-
-        &.expand::after {
-          content:'\f0ab';
-        }
-
-        &.contract::after {
-          content:'\f0aa';
         }
       }
 

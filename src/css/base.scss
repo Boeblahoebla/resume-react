@@ -3,6 +3,35 @@
   position: relative;
 }
 
+p {
+  position: relative;
+  margin-bottom: 0.5em;
+  width:100%;
+
+  &.expand::after, &.contract::after {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    color: white;
+    background-color: $bootstrap-blue-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: 900;
+    position: absolute;
+  }
+
+  &.expand::after {
+    content:'\f0ab';
+  }
+
+  &.contract::after {
+    content:'\f0aa';
+  }
+}
+
 .header {
   padding: 1em;
   position:relative;
@@ -40,13 +69,12 @@
 
   &--work::after, &--edu::after {
     content: '';
-    height: 3.19em;
+    height: 4.2em;
     width: 3px;
     background: $circles-gray-bg-color;
     position: absolute;
     left: 1em;
-    top: 6em;
-  }
+    top: 6em;}
 }
 
 .language-switcher {
