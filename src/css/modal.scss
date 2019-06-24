@@ -1,0 +1,71 @@
+.info {
+  &__section {
+    padding: 1em;
+    margin: 0 0 2.5em 0;
+    border: 3px solid $light-border-timeline-color;
+    border-radius: 15px;
+    position: relative;
+
+    &--personal {
+      margin-top: 1em;
+    }
+
+    &__content {
+      width: 300px;
+      margin: auto;
+      padding: 1em;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--download {
+          justify-content: center;
+        }
+
+        &__icon {
+          width: 10%;
+        }
+      }
+    }
+
+    &--personal::before, &--location::before, &--contact::before, &--resume::before {
+      font-family: "Font Awesome 5 Free", sans-serif;
+      content: '';
+      font-weight: 900;
+      color: $bootstrap-blue-color;
+      background: white;
+      position: absolute;
+      left: calc(50% - 20px);
+      bottom: calc(100% - 25px);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: larger;
+      border: 3px solid $bootstrap-blue-color;
+      box-shadow: 0 0 0 0.5em #fff;
+    }
+
+    &--personal::before {
+      content: '\f508'
+    }
+
+    &--location::before {
+      content: '\f015'
+    }
+
+    &--contact::before {
+      content: '\f2bb'
+    }
+
+    &--resume::before {
+      content: '\f15b';
+      color: $bootstrap-orange-color;
+      border: 3px solid $bootstrap-orange-color
+    }
+  }
+}

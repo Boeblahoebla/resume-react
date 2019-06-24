@@ -142,7 +142,14 @@
       ]
     },
     "personal": {
-      "maritalText": "Living together"
+      "header": "Information",
+      "personal": "Personal info",
+      "marital": "Living together",
+      "contact": "Contact info",
+      "location": "Address",
+      "resume": "Resume",
+      "resumeText": "Download Resume",
+      "resumeLink": "CV-EN.pdf"
     }
   },
   "nl": {
@@ -288,7 +295,14 @@
       ]
     },
     "personal": {
-      "maritalText": "Samenwonend"
+      "header": "Informatie",
+      "personal": "Persoonlijke info",
+      "marital": "Samenwonend",
+      "contact": "Contactinformatie",
+      "location": "Adres",
+      "resume": "CV",
+      "resumeText": "Download CV",
+      "resumeLink": "CV-NL.pdf"
     }
   },
   "skills": [

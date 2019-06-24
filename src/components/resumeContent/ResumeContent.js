@@ -8,6 +8,8 @@ import React, {Fragment, useState} from 'react';
 import TimeLines from './timelines/TimeLines';
 import Credentials from './credentials/Credentials';
 import LanguageSwitcher from '../langSwitcher/LanguageSwitcher';
+import Info from '../info/Info';
+import InfoModal from '../info/InfoModal';
 
 // Styling
 import '../../css/style.css';
@@ -43,7 +45,11 @@ const ResumeContent = ({ resumeData }) => {
             </div>
 
             {/* Language switcher */}
-            <LanguageSwitcher setLang={changeLanguage} chosenLang={lang}/>
+            <LanguageSwitcher setLang={ changeLanguage } chosenLang={lang}/>
+
+            {/* Personal info */}
+            <Info />
+            <InfoModal data={dataInChosenLanguage}/>
         </Fragment>
 
     )

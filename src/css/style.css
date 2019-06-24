@@ -386,30 +386,71 @@ p.contract::after {
   color: rgba(100, 100, 100, 0.25);
   z-index: 3;
 }
+.personal-info:hover {
+  cursor: pointer;
+}
 .personal-info:hover .personal-info__content {
   display: block;
 }
-.personal-info__content {
+
+.info__section {
+  padding: 1em;
+  margin: 0 0 2.5em 0;
+  border: 3px solid rgba(100, 100, 100, 0.1);
+  border-radius: 15px;
+  position: relative;
+}
+.info__section--personal {
+  margin-top: 1em;
+}
+.info__section__content {
   width: 300px;
-  position: absolute;
   margin: auto;
-  right: 3em;
-  top: 3em;
-  background: red;
-  display: none;
-  z-index: 10;
-  border: 3px solid rgba(200, 200, 200, 0.25);
-  background: rgba(220, 220, 220, 0.95);
-  border-radius: 10px;
   padding: 1em;
 }
-.personal-info__content__item {
+.info__section__content__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.personal-info__content__item__icon {
+.info__section__content__item--download {
+  justify-content: center;
+}
+.info__section__content__item__icon {
   width: 10%;
+}
+.info__section--personal::before, .info__section--location::before, .info__section--contact::before, .info__section--resume::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  content: "";
+  font-weight: 900;
+  color: #33b5e5;
+  background: white;
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: calc(100% - 25px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border: 3px solid #33b5e5;
+  box-shadow: 0 0 0 0.5em #fff;
+}
+.info__section--personal::before {
+  content: "";
+}
+.info__section--location::before {
+  content: "";
+}
+.info__section--contact::before {
+  content: "";
+}
+.info__section--resume::before {
+  content: "";
+  color: #ffbb33;
+  border: 3px solid #ffbb33;
 }
 
 @media screen and (max-width: 991px) {
